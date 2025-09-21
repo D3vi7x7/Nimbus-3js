@@ -58,10 +58,10 @@ export function Scene({textureUrl}: SceneProps){
     return (
         <group ref={keyboardRef}>
             <group>
-                <Keyboard scale={scale} position={keyboardPos} 
+                <Keyboard scale={scale} position={[0, 1.02, 3.20]} 
                 rotation={isMobile ? [2,0,.5] : [1.9,0,0]} textureUrl={currentTexture}/>
                 <OrbitControls
-                    target={keyboardPos}
+                    target={[0, 1.02, 3.20]}
                     enablePan={false}
                     enableZoom={false}
                 />
