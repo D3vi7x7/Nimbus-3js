@@ -9,7 +9,11 @@ import { useGSAP } from "@gsap/react";
 import * as THREE from "three";
 import { useMediaQuery } from "react-responsive";
 
-export function Scene({textureUrl}){
+type SceneProps = {
+    textureUrl: string;
+}
+
+export function Scene({textureUrl}: SceneProps){
 
 
     const keyboardRef = useRef<THREE.Group>(null);
