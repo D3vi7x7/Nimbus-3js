@@ -32,7 +32,7 @@ export function Scene({textureUrl}){
             { y: -.6, duration: .6, ease: "power1.inOut" }
             );
         }else{
-            let tl = gsap.timeline();
+            const tl = gsap.timeline();
             tl.to(
             kb.position,
             { y: -20, duration: .7, ease: "power1.inOut" ,onComplete:() => {
