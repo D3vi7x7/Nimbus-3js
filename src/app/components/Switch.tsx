@@ -15,7 +15,12 @@ type GLTFResult = GLTF & {
   materials: Record<string, unknown>;
 };
 
-export function Switch({color,keyType}) {
+type SwitchProps = {
+  color: string;
+  keyType: string;
+}
+
+export function Switch({color,keyType}: SwitchProps) {
   const { nodes } = useGLTF("/switch.gltf") as unknown as GLTFResult;
 
 
